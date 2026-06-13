@@ -66,31 +66,35 @@ A crisp, honest summary of the paper.
 ---
 
 ### FILE 2: `background.md`
-The context needed to understand WHY this paper exists. What is the field? What came before? Why wasn't the old approach good enough?
+**Pre-reading prep.** This file answers: "Before Ayesha opens this paper, what does she need to already know so page 1 doesn't confuse her?" It is NOT a history of the field. It is NOT a story about how the research evolved. It is a prerequisite checklist — think like a senior PhD student prepping a junior labmate 10 minutes before they start reading.
 
 ```
 # Background: [Paper Title]
 
-## What field does this paper belong to?
-[Name the research area and 2-3 sentences on what it studies]
+## What is this paper about? (so you know what to prep for)
+[1-2 sentences — just enough to know the domain/setup, so the prerequisites below make sense]
 
-## The Evolution of This Problem
-[A brief history of how this problem was tackled over time — what approaches existed before, what they achieved, and why they fell short. Write it as a story, not bullet points. 3-5 paragraphs.]
+## What You Need to Know Before You Start
 
-## Key Technologies This Paper Builds On
-For each key technology used in the paper, explain what it is and why it matters here:
+### [Prerequisite Concept 1]
+[What it is, in plain terms — just enough that when this paper mentions it on page 1-2, Ayesha already nods instead of getting stuck]
 
-### [Technology 1]
-[2-3 sentences: what it is, what it does, why this paper uses it]
-
-### [Technology 2]
+### [Prerequisite Concept 2]
 [...]
 
-## Why This Paper's Approach is Different
-[1 paragraph: what specifically makes this paper a step forward from the previous work described above]
+(List every concept/technique/term the paper assumes you already know without explaining. If the paper explains something itself, don't repeat it here.)
 
-## Where Does This Paper Sit in the Bigger Picture?
-[1-2 sentences: is this early-stage research, applied engineering, a benchmark/survey, or a system prototype?]
+## Prior Methods/Papers This One Compares Against or Builds On
+[Short — name the specific prior approaches, algorithms, or papers this work references as baselines/foundations, so Ayesha recognizes them when they come up]
+
+## The Setup You'll See on Page 1
+[1 short paragraph: describe the system/scenario this paper studies — so Ayesha already has a mental picture of "vehicles + UAVs + base station" etc. before she reads the system model section]
+
+## Ready-to-Read Check
+- [ ] I understand [concept 1]
+- [ ] I understand [concept 2]
+- [ ] I know why [the core problem] is hard
+(If something's unchecked, skim `terminology.md` for that term first — then come back.)
 ```
 
 ---
@@ -188,7 +192,7 @@ Every technical term, acronym, and concept in the paper — explained clearly.
 | Rule | Detail |
 |---|---|
 | `summary.md` | English, concise, factual — no fluff |
-| `background.md` | English, narrative style — tell the story of the field |
+| `background.md` | English, prerequisite checklist — what to know BEFORE reading, not field history |
 | `gaps.md` | Critical and bold — call out real weaknesses |
 | `explanation.md` | Hinglish, warm — write "Ayesha" not "Bhai/Ayesha" |
 | `terminology.md` | Clear definitions — no jargon inside a definition |
