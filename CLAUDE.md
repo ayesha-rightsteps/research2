@@ -19,6 +19,7 @@ When you see a `.pdf` file in `/Users/rightsteps/Developer/Research2/research-pa
 ## Folder Structure
 ```
 /Users/rightsteps/Developer/Research2/
+├── overall-background.md     ← master pre-reading file, covers ALL papers (see below)
 ├── research-papers/          ← drop PDFs here (input)
 ├── paper-1/
 │   ├── [original-paper].pdf  ← PDF moved here after processing
@@ -30,6 +31,9 @@ When you see a `.pdf` file in `/Users/rightsteps/Developer/Research2/research-pa
 ├── paper-2/
 │   └── ...
 ```
+
+## `overall-background.md` (root level — read once, before paper-1)
+A single master file (Hinglish, addressed to Ayesha) covering the concepts that repeat ACROSS all papers — wireless/V2X basics, UAV-assisted networks, DRL/MARL, GNN/GAT, classical optimization tools (Lyapunov, BCD-SCA, Hungarian, PSO), and emerging architectures (ISAC, Open-RAN, TN-NTN). It also includes a quick map of all `paper-X` folders, a suggested reading order, and the overall "why are we doing this" framing (problem-statement hunting). Each paper's own `background.md` stays paper-specific; this file is the shared foundation. **Whenever a new paper is added, update the "Quick Map" table and "Suggested Reading Order" sections in `overall-background.md` to include it.**
 
 ---
 
