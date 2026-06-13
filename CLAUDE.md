@@ -224,3 +224,31 @@ Ayesha is a beginner — read in this order so each file builds on the last:
 Every paper we analyze brings us closer to one thing: **a well-defined, defensible problem statement** that no one has solved yet — or that existing work has solved poorly.
 
 Read each paper with that lens.
+
+---
+
+## Session Log Rule
+
+At the **end of every session**, update `/Users/rightsteps/Developer/Research2/session-log.md` with a new entry in this format:
+
+```
+## Session [N] — [YYYY-MM-DD] ([Short title of what was done])
+
+**Kya kiya:**
+- [bullet 1 — what was done]
+- [bullet 2]
+- ...
+
+**Files touched (changes):**
+- [file or folder name] — [what changed]
+
+*Agla kaam (pending):*
+- [anything left unfinished or queued for next session]
+```
+
+Rules:
+- Always use today's actual date (from `currentDate` in system context)
+- Session number = previous highest number + 1
+- Be specific — "rewrote explanation.md for paper-3" not "updated files"
+- If nothing was done in a session (e.g. only questions answered), still log it briefly
+- Never delete old entries — only append new ones at the bottom
