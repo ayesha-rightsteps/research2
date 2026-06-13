@@ -19,7 +19,7 @@ When you see a `.pdf` file in `/Users/rightsteps/Developer/Research2/research-pa
 ## Folder Structure
 ```
 /Users/rightsteps/Developer/Research2/
-├── overall-background.md     ← master pre-reading file, covers ALL papers (see below)
+├── overall-background.md     ← topic-level background, read once before any paper (see below)
 ├── research-papers/          ← drop PDFs here (input)
 ├── paper-1/
 │   ├── [original-paper].pdf  ← PDF moved here after processing
@@ -33,7 +33,7 @@ When you see a `.pdf` file in `/Users/rightsteps/Developer/Research2/research-pa
 ```
 
 ## `overall-background.md` (root level — read once, before paper-1)
-A single master file (Hinglish, addressed to Ayesha) covering the concepts that repeat ACROSS all papers — wireless/V2X basics, UAV-assisted networks, DRL/MARL, GNN/GAT, classical optimization tools (Lyapunov, BCD-SCA, Hungarian, PSO), and emerging architectures (ISAC, Open-RAN, TN-NTN). It also includes a quick map of all `paper-X` folders, a suggested reading order, and the overall "why are we doing this" framing (problem-statement hunting). Each paper's own `background.md` stays paper-specific; this file is the shared foundation. **Whenever a new paper is added, update the "Quick Map" table and "Suggested Reading Order" sections in `overall-background.md` to include it.**
+A single **topic-level** file (Hinglish, addressed to Ayesha) — NOT about any specific paper. It answers: "What is this whole research topic, why does it exist, what real-world need drives it, and what foundational knowledge does Ayesha need to make sense of this domain in general?" Covers: what the topic is (resource allocation in next-gen wireless — V2X/UAV/6G), why it matters (real-world motivation/need), the shared foundational concepts (wireless/V2X basics, UAV-assisted networks, DRL/MARL, GNN/GAT, classical optimization tools, emerging architectures like ISAC/Open-RAN/TN-NTN), and the open tensions that make this an active research area. Each paper's own `background.md` stays paper-specific (prerequisites for THAT paper); this file is the shared topic-level foundation and does not reference individual papers.
 
 ---
 
