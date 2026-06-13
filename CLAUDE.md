@@ -130,64 +130,69 @@ The most important file. Think like a critical researcher.
 ---
 
 ### FILE 4: `explanation.md`
-Step-by-step explanation in **Hinglish** — warm, conversational, like a friend explaining.
+Step-by-step explanation in **Hinglish** — warm, conversational, like a friend explaining. **Ayesha is a complete beginner to networking/wireless/AI** — she has NO prior background. This file must read like an actual explanation, not a list of points. If she reads only this file and nothing else, she should still come away genuinely understanding the paper.
 
 ```
 # Explanation: [Paper Title]
-*(Hinglish mein — simple aur step-by-step)*
+*(Hinglish mein — simple, depth mein, jaise main tumhe samjha raha hoon)*
 
 ## Ayesha, ye paper basically kya kehta hai?
-[3-4 lines, seedha simple — koi technical bakwaas nahi]
+[3-5 sentences, ek flowing paragraph — pura context ek saath de do. Koi term bina explain kiye mat use karo.]
 
 ## Problem kya tha?
-[Real-world context, relatable example]
+[1-2 paragraphs — kisi real-world example/analogy se shuru karo (jaise traffic, phone signal, etc.), phir us example ko paper ke technical problem se connect karo. Jo bhi naya term yahan aaye, usi sentence mein "matlab ___" karke explain karo.]
 
-## Inhone kya socha?
-[Their idea, use analogy if possible]
+## Inhone kya socha? (Unka Idea)
+[1-2 paragraphs — unka core idea, analogy ke saath. Agar kisi technique/algorithm/model ka naam aaye (jaise koi bhi acronym), turant usi waqt 1-2 sentence mein bataa do woh kya hota hai — zero prior knowledge assume karo.]
 
-## Kaise kiya? (Step by step)
-1. **Step 1:** [kya kiya, kyun kiya]
-2. **Step 2:** [...]
-(jitne steps ho utne likho)
+## Kaise kiya? (Step by step — har step ek paragraph mein, sirf ek-line points nahi)
+**Step 1: [Step ka naam, simple Hinglish mein]**
+[Kam se kam 3-4 sentences ka paragraph — kya kiya, kyun kiya, kaise kiya. Har naya term/acronym jo pehli baar aaye, usi waqt explain karo.]
+
+**Step 2: [...]**
+[...]
+
+(jitne steps ho utne likho — koi step ek-line bullet na ho)
 
 ## Kya mila result mein?
-[Numbers ke saath, explain karo ki good hai ya nahi aur kyun]
+[Paragraph — numbers ke saath, explain karo number ka real-life matlab kya hai, good hai ya nahi aur kyun]
 
 ## Ek line mein?
 > "[Simplest possible summary]"
 
-## Kya samajhna padega pehle?
-- [Prereq concept 1 — 1 line]
-- [Prereq concept 2]
+## Kya samajhna padega pehle? (quick recap)
+[2-3 lines mein un concepts ko bhi chhoo do jo upar use hue — agar inn par aur depth chahiye toh terminology.md dekho]
 ```
 
 ---
 
 ### FILE 5: `terminology.md`
-Every technical term, acronym, and concept in the paper — explained clearly.
+Every technical term, acronym, and concept in the paper — explained **from scratch, for a complete beginner**. Ayesha doesn't know basic networking either, so don't just define a term using other jargon — build it up from first principles.
 
 ```
 # Terminology: [Paper Title]
 
-> Quick reference for every technical term in this paper.
+> Beginner-friendly reference — har term zero-knowledge se explain kiya gaya hai. Koi short-form/acronym bina poora naam aur matlab bataye nahi chhoda gaya.
 
 ---
 
-## [TERM 1] ⭐
-**What it is:** [Plain English, 1-2 sentences]
+## [TERM 1] ⭐ (Full form: [spell out the acronym if any])
+**What it is (from scratch):** [Plain English/Hinglish, but go a level deeper than usual — if this term depends on a more basic idea (e.g. "frequency", "channel", "signal"), explain that basic idea first in 1 sentence, THEN build up to this term. Never define jargon using more jargon.]
 **In this paper:** [How/why this paper uses it specifically]
-**Easy way to remember:** [Analogy or memory hook]
+**Real-life analogy:** [A concrete, everyday comparison]
+**Easy way to remember:** [Memory hook]
 
 ---
 
 ## [TERM 2]
-**What it is:** [...]
+**What it is (from scratch):** [...]
 **In this paper:** [...]
+**Real-life analogy:** [...]
 **Easy way to remember:** [...]
 
 ---
 (Mark the 5 most important terms with ⭐)
-(Cover EVERY acronym, model name, dataset, metric, and algorithm in the paper)
+(Cover EVERY acronym, model name, dataset, metric, and algorithm in the paper — and spell out every acronym in full)
 ```
 
 ---
@@ -198,10 +203,20 @@ Every technical term, acronym, and concept in the paper — explained clearly.
 | `summary.md` | English, concise, factual — no fluff |
 | `background.md` | English, prerequisite checklist — what to know BEFORE reading, not field history |
 | `gaps.md` | Critical and bold — call out real weaknesses |
-| `explanation.md` | Hinglish, warm — write "Ayesha" not "Bhai/Ayesha" |
-| `terminology.md` | Clear definitions — no jargon inside a definition |
+| `explanation.md` | Hinglish, warm, **full paragraphs not bullet points** — write "Ayesha" not "Bhai/Ayesha". Every term explained inline on first use, zero prior knowledge assumed. |
+| `terminology.md` | Beginner-from-scratch — never define jargon with more jargon, spell out every acronym, add real-life analogies |
 | Accuracy | Never hallucinate. If unclear, write "Paper does not specify." |
 | Problem Statements | Specific, not vague. "Existing Y fails when Z because W" format. |
+
+---
+
+## Suggested Reading Order (inside each `paper-X` folder)
+Ayesha is a beginner — read in this order so each file builds on the last:
+1. **`summary.md`** — get the big picture first (5 min)
+2. **`terminology.md`** — learn the key terms before the deep dive (10-15 min)
+3. **`explanation.md`** — now the step-by-step explanation will actually make sense (15-20 min)
+4. **`gaps.md`** — critical thinking, what's missing, problem-statement ideas (10 min)
+5. **`background.md`** — currently being reworked, skip for now
 
 ---
 
